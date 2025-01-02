@@ -19,7 +19,7 @@ const ShowBook = () => {
     setLoading(true);
     console.log('Book ID:', book._id);
     axios
-      .get(`http://localhost:5555/books/${id}`)
+      .get(`https://book-nest-mwi9kfq1z-sarfrozs-projects.vercel.app/books/${id}`)
       .then((response) => {
         console.log(response.data); //log the response data
         setBook(response.data);
