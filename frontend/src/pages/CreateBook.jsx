@@ -21,7 +21,7 @@ const CreateBook = () => {
     };
     setLoading(true);
     axios 
-      .post('http://localhost:5555/books',data)
+      .post('https://book-nest-mwi9kfq1z-sarfrozs-projects.vercel.app/books',data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar('Book Created successfully', { variant: 'success' });
