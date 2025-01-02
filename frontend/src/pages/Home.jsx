@@ -17,7 +17,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get('https://book-nest-mwi9kfq1z-sarfrozs-projects.vercel.app/books')
+      .get('https://booknest-6065.onrender.com/books')
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false);
